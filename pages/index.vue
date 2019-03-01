@@ -1,12 +1,11 @@
 <template>
   <section class="Container">
     <div>
-      <h1>
-        TANAKAWORLD.DEV
-      </h1>
-      <h2>
-        NO PIXEL NO LIFE
-      </h2>
+      <h1>TANAKAWORLD.DEV</h1>
+      <p class="Emoji">
+        🧢
+      </p>
+      <h2>NO PIXEL NO LIFE</h2>
     </div>
   </section>
 </template>
@@ -14,13 +13,8 @@
 <script lang="ts">
 import Vue from 'vue'
 import Component from 'vue-class-component'
-import Logo from '~/components/Logo.vue'
 
-@Component({
-  components: {
-    Logo
-  }
-})
+@Component
 class TopPage extends Vue {}
 
 export default TopPage
@@ -34,5 +28,9 @@ export default TopPage
   justify-content: center;
   align-items: center;
   text-align: center;
+}
+
+.Emoji {
+  font-size: 8rem;
 }
 </style>
