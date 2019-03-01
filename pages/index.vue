@@ -23,14 +23,19 @@
   </section>
 </template>
 
-<script>
+<script lang="ts">
+import Vue from 'vue'
+import Component from 'vue-class-component'
 import Logo from '~/components/Logo.vue'
 
-export default {
+@Component({
   components: {
     Logo
   }
-}
+})
+class TopPage extends Vue {}
+
+export default TopPage
 </script>
 
 <style>

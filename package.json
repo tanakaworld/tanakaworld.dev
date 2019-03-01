@@ -5,21 +5,29 @@
   "author": "tanakaworld",
   "private": true,
   "scripts": {
-    "dev": "nuxt",
-    "build": "nuxt build",
-    "start": "nuxt start",
-    "generate": "nuxt generate",
+    "dev": "nuxt-ts",
+    "build": "nuxt-ts build",
+    "start": "nuxt-ts start",
+    "generate": "nuxt-ts generate",
     "lint": "eslint --ext .js,.vue --ignore-path .gitignore .",
     "precommit": "npm run lint",
     "test": "jest"
   },
   "dependencies": {
     "cross-env": "^5.2.0",
-    "nuxt": "^2.4.5"
+    "nuxt": "^2.4.5",
+    "nuxt-ts": "^2.4.5"
   },
   "devDependencies": {
     "@nuxtjs/eslint-config": "^0.0.1",
+    "@types/babel-core": "6.25.6",
+    "@types/eslint": "^4.16.6",
+    "@types/eslint-plugin-prettier": "2.2.0",
+    "@types/jest": "^24.0.9",
+    "@types/prettier": "1.16.1",
+    "@types/webpack": "^4.4.25",
     "@vue/eslint-config-prettier": "^4.0.1",
+    "@vue/eslint-config-typescript": "^4.0.0",
     "@vue/test-utils": "^1.0.0-beta.29",
     "babel-core": "7.0.0-bridge.0",
     "babel-eslint": "^10.0.1",
@@ -38,6 +46,7 @@
     "jest": "^24.1.0",
     "nodemon": "^1.18.10",
     "prettier": "1.16.4",
+    "vue-class-component": "^7.0.1",
     "vue-jest": "^3.0.3"
   }
 }

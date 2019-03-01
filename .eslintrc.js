@@ -10,9 +10,12 @@ module.exports = {
   extends: [
     'prettier',
     '@nuxtjs',
+    'plugin:@typescript-eslint/recommended',
+    'prettier/@typescript-eslint',
     'plugin:prettier/recommended',
     'plugin:vue/recommended',
-    '@vue/prettier'
+    '@vue/prettier',
+    '@vue/typescript'
   ],
   plugins: ['prettier'],
   rules: {
