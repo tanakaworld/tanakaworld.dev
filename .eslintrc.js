@@ -8,12 +8,15 @@ module.exports = {
     parser: 'babel-eslint'
   },
   extends: [
+    'prettier',
     '@nuxtjs',
-    'plugin:prettier/recommended'
+    'plugin:prettier/recommended',
+    'plugin:vue/recommended',
+    '@vue/prettier'
   ],
-  plugins: [
-    'prettier'
-  ],
-  // add your custom rules here
-  rules: {}
+  plugins: ['prettier'],
+  rules: {
+    'no-console': process.env.NODE_ENV === 'production' ? 'error' : 'off',
+    'no-debugger': process.env.NODE_ENV === 'production' ? 'error' : 'off'
+  }
 }
