@@ -1,0 +1,29 @@
+:root {
+  --color-dark-grey: #555555;
+  --color-white: #ffffff;
+}
+
+*,
+*::before,
+*::after {
+  box-sizing: border-box;
+}
+
+@font-face {
+  font-family: 'Misaki Gothic';
+  src: url('~assets/fonts/misaki_gothic.ttf') format('truetype');
+}
+
+@font-face {
+  font-family: 'Misaki Mincho';
+  src: url('~assets/fonts/misaki_mincho.ttf') format('truetype');
+}
+
+html,
+body {
+  font-family: Misaki Gothic, Misaki Mincho, Arial, Helvetica, sans-serif;
+  margin: 0;
+  padding: 0;
+  background: var(--color-dark-grey);
+  color: var(--color-white);
+}
