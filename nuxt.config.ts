@@ -2,10 +2,6 @@ import { Configuration } from 'webpack'
 import { Context } from '@nuxt/vue-app'
 
 export default {
-
-  /*
-   ** Headers of the page
-   */
   mode: 'spa',
   head: {
     title: 'tanakaworld.dev',
@@ -16,34 +12,11 @@ export default {
     ],
     link: [{ rel: 'icon', type: 'image/x-icon', href: '/favicon.ico' }]
   },
-
-  /*
-   ** Customize the progress-bar color
-   */
   loading: { color: '#fff' },
-
-  /*
-   ** Global CSS
-   */
   css: ['ress/dist/ress.min.css', '~/assets/styles/global.css'],
-
-  /*
-   ** Plugins to load before mounting the App
-   */
   plugins: [],
-
-  /*
-   ** Nuxt.js modules
-   */
   modules: [],
-
-  /*
-   ** Build configuration
-   */
   build: {
-    /*
-     ** You can extend webpack config here
-     */
     extend(config: Configuration, ctx: Context) {
       // Run ESLint on save
       if (ctx.isDev && ctx.isClient) {
