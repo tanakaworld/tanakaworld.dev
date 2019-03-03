@@ -1,6 +1,8 @@
 :root {
   --color-dark-grey: #555555;
   --color-white: #ffffff;
+  --color-sky-blue: #91c3dc;
+  --color-yellow: #fbed29;
 }
 
 *,
@@ -26,4 +28,9 @@ body {
   padding: 0;
   background: var(--color-dark-grey);
   color: var(--color-white);
+}
+
+a {
+  text-decoration: none;
+  color: var(--color-sky-blue);
 }

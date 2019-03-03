@@ -50,5 +50,10 @@
     "prettier": "1.16.4",
     "vue-class-component": "^7.0.1",
     "vue-jest": "^3.0.3"
-  }
+  },
+  "browserslist": [
+    "last 1 version",
+    "> 1%",
+    "IE 10"
+  ]
 }
