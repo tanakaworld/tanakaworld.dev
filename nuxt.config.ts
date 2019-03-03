@@ -2,11 +2,11 @@ import { Configuration } from 'webpack'
 import { Context } from '@nuxt/vue-app'
 
 export default {
-  mode: 'universal',
 
   /*
    ** Headers of the page
    */
+  mode: 'spa',
   head: {
     title: 'tanakaworld.dev',
     meta: [
